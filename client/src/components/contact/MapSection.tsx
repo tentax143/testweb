@@ -95,8 +95,7 @@ const MapSection = () => {
               <polyline points="12 6 12 12 16 14" />
             </svg>
             <div>
-              <h4 className="font-medium">Office Hours</h4>
-              <p className="text-muted-foreground">Monday - Friday: 9AM - 6PM<br />Saturday - Sunday: Closed</p>
+              
             </div>
           </div>
         </div>

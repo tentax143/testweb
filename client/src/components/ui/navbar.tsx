@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "../../lib/Theme";
+import { useTheme } from "next-themes";
 import { Button } from "./button";
 import { cn } from "../../lib/utils";
 
@@ -28,9 +28,7 @@ const Navbar = () => {
 
   // Toggle theme
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    console.log(`Toggling theme from ${theme} to ${newTheme}`);
-    setTheme(newTheme);
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
